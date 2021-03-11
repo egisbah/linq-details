@@ -14,8 +14,8 @@ namespace LinqDetails
                 .Where(n => n.Length > 10)
                 .Select(n => n.ToUpper());
 
-            var listFilter = MoreThanFive(source);
-            var listMap = AddTen(listFilter);
+            var listFilter = LongerThanTen(source);
+            var listMap = ToUppercase(listFilter);
 
             source.Add("defenestration");
 
@@ -23,12 +23,12 @@ namespace LinqDetails
             Print(listMap);
         }
 
-        private static IEnumerable<string> MoreThanFive(IEnumerable<string> collection)
+        private static IEnumerable<string> LongerThanTen(IEnumerable<string> collection)
         {
             throw new NotImplementedException();
         }
 
-        private static IEnumerable<string> AddTen(IEnumerable<string> collection)
+        private static IEnumerable<string> ToUppercase(IEnumerable<string> collection)
         {
             throw new NotImplementedException();
         }
